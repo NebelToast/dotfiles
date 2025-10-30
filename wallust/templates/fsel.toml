@@ -1,0 +1,10 @@
+highlight_color = "{{color2}}"
+main_border_color = "{{color2 | blend(color12) | darken(0.4)}}"
+apps_border_color = "{{color2 | blend(color12) | darken(0.4)}}"
+input_border_color = "{{color2 | blend(color12) | darken(0.4)}}"
+
+# Light colors  
+main_text_color = "{{color2 | blend(foreground) | darken(0.2)}}"
+apps_text_color = "{{color2 | blend(foreground) | darken(0.2)}}"
+input_text_color = "{{color2 | blend(foreground) | darken(0.2)}}"
+header_title_color = "{{color2 | blend(foreground) | darken(0.2)}}"

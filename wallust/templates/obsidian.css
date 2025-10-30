@@ -1,0 +1,54 @@
+
+
+.theme-dark {
+    --background-primary: {{background}};
+    --background-primary-alt: {{background | darken(0.1)}};
+    --background-secondary: {{background}};
+    --background-secondary-alt: {{background}};
+    --background-modifier-form-field: {{background | lighten(0.1)}};
+    --background-modifier-form-field-highlighted: {{background | lighten(0.2)}};
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: {{color2 | darken(0.2)}};
+    --background-modifier-error: {{color1 | darken(0.2)}};
+    --background-modifier-error-hover: {{color1 | darken(0.3)}};
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+    --text-accent: {{color2}};
+    --text-accent-hover: {{color2 | lighten(0.1)}};
+    --text-normal: {{foreground | darken(0.2)}};
+    --text-muted: {{foreground | darken(0.3)}};
+    --text-faint: {{foreground| darken(0.4)}};
+    --text-on-accent: {{background}};
+    --text-selection: rgba({{color2 | rgb}}, 0.3);
+    --text-highlight-bg: rgba({{color3 | rgb}}, 0.3);
+    --text-error: {{color1}};
+    --text-success: {{color2}};
+    --text-error-hover: {{color1 | lighten(0.1)}};
+
+    --interactive-normal: {{color2 | darken(0.1)}};
+    --interactive-hover: {{color2}};
+    --interactive-accent: {{color2}};
+    --interactive-accent-hover: {{color2 | lighten(0.1)}};
+    --interactive-success: {{color2}};
+    --interactive-error: {{color1}};
+
+    --h1-color: {{color2}};
+    --h2-color: {{color3}};
+    --h3-color: {{color4}};
+    --h4-color: {{color5}};
+    --h5-color: {{color6}};
+    --h6-color: {{color10}};
+
+    --pre-code-font-color: {{color10 | lighten(0.2)}};
+    --nav-item-color: {{color2| blend(foreground)}};
+    --nav-collapse-icon-color: {{color2 | darken(0.4)}};
+    --nav-item-color-hover: {{color2 | lighten(0.1)}};
+    --icon-color: {{color2 | blend(foreground)}};
+    --icon-color-hover: {{color2 | darken(0.2)}};
+    --titlebar-background: {{background}};
+}
+body {
+	--toggle-radius: 10px;
+	--toggle-thumb-radius: 10px;
+	--slider-thumb-radius: 10px;
+}
