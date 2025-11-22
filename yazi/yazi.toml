@@ -1,0 +1,13 @@
+[opener]
+vscode = [
+	{ run = 'code "$@"', orphan = true },
+]
+
+[open]
+rules = [
+	{ name = "*/", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "video/*", use = [ "open", "reveal" ] },
+	{ mime = "audio/*", use = [ "open", "reveal" ] },
+	{ name = "*", use = [ "vscode", "open", "reveal" ] },
+]
