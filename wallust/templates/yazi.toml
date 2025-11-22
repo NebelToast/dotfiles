@@ -95,6 +95,6 @@ title_error = { fg = "{{color1}}" }
 rules = [
 
 	{ name = "*", fg = "{{color2 | blend(foreground) | darken(0.2)}}" },
-	{ name = "*/", fg = "{{color2 | blend(foreground) | darken(0.2)}}", bold = true }
+	{ name = "*/", fg = "{{color2 | blend(color4)}}", bold = true }
 ]
 
