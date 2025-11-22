@@ -1,0 +1,100 @@
+[mgr]
+cwd = { fg = "{{color2 | blend(foreground) | darken(0.2)}}" }
+
+hovered         = { fg = "{{background | blend(color2)}}", bg = "{{color3 | lighten(0.1)}}" }
+preview_hovered = { underline = true }
+
+find_keyword  = { fg = "{{color3}}", italic = true }
+find_position = { fg = "{{color5}}", bg = "reset", italic = true }
+
+marker_copied   = { fg = "{{color2}}", bg = "{{color2}}" }
+marker_cut      = { fg = "{{color1}}", bg = "{{color1}}" }
+marker_marked   = { fg = "{{color3}}", bg = "{{color3}}" }
+marker_selected = { fg = "{{color2}}", bg = "{{color2}}" }
+
+border_symbol = "│"
+border_style  = { fg = "{{color2}}" }
+
+[tabs]
+active   = { fg = "{{background}}", bg = "{{color2}}" }
+inactive = { fg = "{{color2 | blend(foreground) | darken(0.2)}}", bg = "{{color0}}" }
+
+[mode]
+normal_main = { fg = "{{background}}", bg = "{{color2}}", bold = true }
+normal_alt  = { fg = "{{color2}}", bg = "{{color0}}", bold = true }
+
+select_main = { fg = "{{background}}", bg = "{{color5}}", bold = true }
+select_alt  = { fg = "{{color5}}", bg = "{{color0}}", bold = true }
+
+unset_main  = { fg = "{{background}}", bg = "{{color2}}", bold = true }
+unset_alt   = { fg = "{{color2}}", bg = "{{color0}}", bold = true }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "{{color2}}", bg = "{{color2}}" }
+
+mode_normal = { fg = "{{background}}", bg = "{{color2}}", bold = true }
+mode_select = { fg = "{{background}}", bg = "{{color5}}", bold = true }
+mode_unset  = { fg = "{{background}}", bg = "{{color2}}", bold = true }
+
+progress_label  = { fg = "{{foreground}}", bold = true }
+progress_normal = { fg = "{{color2}}", bg = "{{color0}}" }
+progress_error  = { fg = "{{color1}}", bg = "{{color0}}" }
+
+perm_type  = { fg = "{{color2}}" }
+perm_read  = { fg = "{{color3}}" }
+perm_write = { fg = "{{color1}}" }
+perm_exec  = { fg = "{{color2}}" }
+perm_sep   = { fg = "{{color8}}" }
+
+[pick]
+active   = { fg = "{{color2}}", bold = true }
+inactive = { fg = "{{foreground}}" }
+
+[input]
+title    = { fg = "{{foreground}}" }
+value    = { fg = "{{foreground}}" }
+selected = { bg = "{{color2}}" }
+
+[cmp]
+active   = { fg = "{{background}}", bg = "{{color2}}" }
+inactive = { fg = "{{foreground}}" }
+
+[tasks]
+title   = { fg = "{{foreground}}" }
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "{{color0}}" }
+cand            = { fg = "{{color6}}" }
+rest            = { fg = "{{color2 | blend(foreground) | darken(0.2)}}" }
+desc            = { fg = "{{foreground}}" }
+separator       = "  "
+separator_style = { fg = "{{color8}}" }
+
+[help]
+on      = { fg = "{{color6}}" }
+run     = { fg = "{{color2}}" }
+desc    = { fg = "{{foreground}}" }
+hovered = { bg = "{{color0}}", underline = true }
+footer  = { fg = "{{foreground}}", bg = "{{color0}}" }
+
+[spot]
+title    = { fg = "{{color2}}" }
+tbl_col  = { fg = "{{color6}}" }
+tbl_cell = { fg = "{{color5}}", bg = "{{color0}}" }
+
+[notify]
+title_info  = { fg = "{{color2}}" }
+title_warn  = { fg = "{{color3}}" }
+title_error = { fg = "{{color1}}" }
+
+[filetype]
+
+rules = [
+
+	{ name = "*", fg = "{{color2 | blend(foreground) | darken(0.2)}}" },
+	{ name = "*/", fg = "{{color2 | blend(foreground) | darken(0.2)}}", bold = true }
+]
+
