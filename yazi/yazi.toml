@@ -11,3 +11,7 @@ rules = [
 	{ mime = "audio/*", use = [ "open", "reveal" ] },
 	{ name = "*", use = [ "vscode", "open", "reveal" ] },
 ]
+
+[mgr]
+sort_by = "mtime"
+sort_reverse = true
