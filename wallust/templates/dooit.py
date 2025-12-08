@@ -58,14 +58,14 @@ def setup_formatters(api: DooitAPI, _):
 
     # --------- TODOS ---------
     # status formatter
-    fmt.todos.status.add(status_icons(completed=" ", pending="󰞋 ", overdue="󰅗 "))
+    fmt.todos.status.add(status_icons(completed=" ", pending="󰳤 ", overdue="󰅗 "))
     # urgency formatte
     u_icons = {1: "  1󰈸", 2: "  2󰈸", 3: "  3", 4: "  4"}
     fmt.todos.urgency.add(urgency_icons(icons=u_icons))
 
     # due formatter
     fmt.todos.due.add(due_casual_format())
-    fmt.todos.due.add(due_icon(completed="󱫐 ", pending="󱫚 ", overdue="󱫦 "))
+    fmt.todos.due.add(due_icon(completed="󱫐 ", pending="󰳤 ", overdue="󱫦 "))
 
     # effort formatter
     fmt.todos.effort.add(effort_icon(icon="󱠇 "))
