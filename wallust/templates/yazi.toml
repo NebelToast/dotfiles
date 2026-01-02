@@ -1,8 +1,6 @@
 [mgr]
 cwd = { fg = "{{color2 | blend(foreground) | darken(0.2)}}" }
 
-hovered         = { fg = "{{background | blend(color2)}}", bg = "{{color3 | lighten(0.1)}}" }
-preview_hovered = { underline = true }
 
 find_keyword  = { fg = "{{color3}}", italic = true }
 find_position = { fg = "{{color5}}", bg = "reset", italic = true }
@@ -14,6 +12,10 @@ marker_selected = { fg = "{{color2}}", bg = "{{color2}}" }
 
 border_symbol = "│"
 border_style  = { fg = "{{color2}}" }
+[indicator]
+current = { fg = "{{background | blend(color2)}}", bg = "{{color3 | lighten(0.1)}}" }
+preview = { underline = true }
+
 
 [tabs]
 active   = { fg = "{{background}}", bg = "{{color2}}" }
@@ -94,7 +96,7 @@ title_error = { fg = "{{color1}}" }
 
 rules = [
 
-	{ name = "*", fg = "{{color2 | blend(foreground) | darken(0.2)}}" },
-	{ name = "*/", fg = "{{color2 | blend(color4)}}", bold = true }
+	{ url = "*", fg = "{{color2 | blend(foreground) | darken(0.2)}}" },
+	{ url = "*/", fg = "{{color2 | blend(color4)}}", bold = true }
 ]
 
