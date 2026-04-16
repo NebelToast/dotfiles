@@ -70,8 +70,13 @@ obsidian.template = 'obsidian.css'
 obsidian.target = '~/Everything/.obsidian/themes/Wallust/theme.css'
 neopywal.template = "colors_neopywal.vim"
 neopywal.target = '~/.cache/wal/colors-wal.vim'
+vicinae.template = 'vicinae.toml'
+vicinae.target = '~/.local/share/vicinae/themes/matugen.toml'
 # NOTE: prefer '' over "" for paths, avoids escaping.
 # template: A RELATIVE path that points to `~/.config/wallust/template` (depends on platform)
 # target: ABSOLUTE path in which to place a file with generated templated values.
 # ¡ If either one is a directory, then both SHOULD be one. !
 # zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
+
+[hooks]
+vicinae = 'if command -v vicinae >/dev/null; then vicinae theme set matugen; fi'
